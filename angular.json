@@ -24,9 +24,36 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/custom.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/camera.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/versions.css",
+              "src/assets/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/popper.js/dist/umd/popper.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/js/modernizr.js",
+              "src/assets/js/parallaxie.js",
+              "src/assets/js/headline.js",
+              "src/assets/js/jqBootstrapValidation.js",
+              "src/assets/js/contact_me.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/jquery.vide.js",
+              "src/assets/js/scroll.js",
+              "src/assets/js/animate.js",
+              "src/assets/js/hoverdir.js",
+              "src/assets/js/images-loded.min.js",
+              "src/assets/js/isotope.min.js",
+              "src/assets/js/jquery.prettyPhoto.js",
+              "src/assets/js/owl.carousel.js",
+              "src/assets/js/portfolio.js"
+            ]
           },
           "configurations": {
             "production": {

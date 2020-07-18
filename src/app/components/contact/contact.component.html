@@ -1,0 +1,72 @@
+<div id="contact" class="section db">
+    <Br>
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Contáctenos</h3>
+            <p>Estamos disponibles para resolver dudas en cualquier momento.</p>
+        </div><!-- end title -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact_form">
+                    <div id="message"></div>
+                    <form [formGroup]="ContactForm" (ngSubmit)="processForm(contactForm)" #contactForm="ngForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="name" id="name" type="text" placeholder="Nombre" required [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+                                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback" style="font-size: 100%;">
+                                            <div *ngIf="f.name.errors.required">Porfavor ingrese su nombre.</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="email" id="email" type="email" placeholder="Email" email required [ngClass]="{ 'is-invalid': submitted && f.email.errors }" >
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback" style="font-size: 100%;">
+                                        <div *ngIf="f.email.errors.required">Porfavor ingrese un email valido.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="phone" id="phone" type="number" placeholder="Teléfono" required [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"  >
+                                    <div *ngIf="submitted && f.phone.errors" class="invalid-feedback" style="font-size: 100%;">
+                                        <div *ngIf="f.phone.errors.required">Porfavor ingrese un número telefónico</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" formControlName="message" id="message" placeholder="Mensaje" required [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                                    <div *ngIf="submitted && f.message.errors" class="invalid-feedback" style="font-size: 100%;">
+                                        <div *ngIf="f.message.errors.required">Porfavor ingrese un mensaje.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button id="sendMessageButton" class="sim-btn hvr-bounce-to-top" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+<div class="copyrights">
+    <div class="container">
+        <div class="footer-distributed">
+            <a href="#home"><img src="../../../assets/images/logo.png" alt="Cliniservices" class="logoFooter" /></a>
+            <div class="footer-center">
+                <p class="footer-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Corporativo</a>
+                    <a href="#portfolio">Productos</a>
+                    <a href="#contact">Contactenos</a>
+                </p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Cliniservices</a></p>
+            </div>
+        </div>
+    </div><!-- end container -->
+</div><!-- end copyrights -->

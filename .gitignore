@@ -1,5 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+/node_modules
+/src/assets/archivos/videos/WASTON MEDICAL_1.mp4
+/src/assets/archivos/videos/WASTON MEDICAL_1.zip
 # compiled output
 /dist
 /tmp

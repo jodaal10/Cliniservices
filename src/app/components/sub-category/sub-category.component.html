@@ -1,0 +1,23 @@
+<section id="home" class="main-banner parallaxie" style="background: url('../../../assets/uploads/banner-02.jpg') center 0px/ cover no-repeat fixed; max-height: 30%"></section>
+<div id="team" class="section wb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>{{subCategory}}</h3>
+            <p>A continuación listamos los productos que tenemos disponibles para {{subCategory}}</p>
+        </div><!-- end title -->
+    
+        <div class="row">
+            <div *ngFor ="let Product of Products" class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{{imageUrl+Product.Imagen}}"  [routerLink]="['/productDetails', Product.id ]">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">{{Product.Nombre}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
